@@ -1,0 +1,41 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Inter_18pt-Regular'),
+    local('Inter 18pt Regular'),
+    url('/fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Inter_18pt-Italic'),
+    local('Inter 18pt Italic'),
+    url('/fonts/Inter_18pt-Italic.ttf') format('truetype');
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Inter_18pt-Bold'),
+    local('Inter 18pt Bold'),
+    url('/fonts/Inter_18pt-Bold.ttf') format('truetype');
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
+}
+
+header a {
+  color: white;
+}

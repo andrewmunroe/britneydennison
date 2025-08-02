@@ -1,0 +1,54 @@
+---
+layout: ../layouts/DefaultLayout.astro
+title: Britney Dennison
+description: Britney Dennison is an award-winning journalist and journalism educator. She’s the current Executive Editor at the Global Reporting Centre, based at the University of British Columbia’s School of Journalism, Writing, and Media.
+---
+
+import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets';
+import { Notification } from 'accessible-astro-components'
+import ProjectList from '../components/ProjectList.astro'
+import paris from '../assets/img/britney-lausanne2.jpg'
+import yellowknife from '../assets/img/britney-yellowknife.jpg'
+
+
+<main>
+
+<header class="bg-emerald-900 w-full md:flex items-stretch">
+
+<div class="prose p-8 mx-auto flex-1/2 flex flex-wrap">
+  <div>
+    <h1 class="text-4xl rounded leading-10 text-white mb-6">Britney Dennison is a multimedia journalist and journalism educator.</h1>
+    <div class="gap-2 flex flex-wrap">
+      <button class="btn btn-success min-w-[120px]">Journalism</button>
+      <button class="btn btn-success min-w-[120px]">Teaching</button>
+      <button class="btn btn-success min-w-[120px]">Contact</button>
+    </div>
+  </div>
+  <p class="text-xs text-neutral-content self-end">Photo: Britney leading graduate students on a reporting trip to the International Olympic Committee headquarters in Lausanne in December, 2023. The result of that reporting was an Al Jazeera documentary on housing displacement and the Olympics, broadcast to millions.</p>
+</div>
+
+<figure class="flex flex-1/2">
+<Image src={paris} alt="A woman holding a camera on the streets of Paris in December." class="object-cover" />
+</figure>
+
+</header>
+
+<article class="py-12 px-8 max-w-[80%]">
+
+<div class="md:flex gap-8 mb-12 text-sm">
+
+<div class="flex-1/2"><p>Britney’s work has been published in outlets including The Toronto Star, The Tyee, PBS NewsHour, Mongabay, Mother Jones, NBC News, and Al Jazeera.</p><p class="mt-4">Her journalism and her work in journalism education has earned her a number of <a class="underline decoration-wavy font-bold" href="#">awards</a>, including a National Edward R. Murrow Award in the category of Diversity, Equity, and Inclusion.</p></div>
+
+<p class="flex-1/2">Britney is currently the Executive Editor at the Global Reporting Centre (GRC), based at the University of British Columbia’s School of Journalism, Writing, and Media. For the past ten years, she has been instrumental in shaping the GRC, a hub for journalism collaboration, education, and research, as well as teaching the Global Reporting Program, a year-long graduate-level course at UBC that sees students travel abroad to conduct a deep global investigation.</p>
+
+</div>
+
+<figure>
+<Image src={yellowknife} alt="A woman holding a camera on the streets of Paris in December." class="rounded" />
+<figcaption class="text-xs opacity-50 max-w-prose rounded-lg">Britney leading graduate students in the field at the head office of the International Olympic Committee in Lausanne, Switzerland. With Britney as Executive Editor, the students produced a 20-minute documentary related to housing displacement and the Paris 2024 Summer Olympics that was published by Al Jazeera and broadcast to millions.</figcaption>
+</figure>
+
+</article>
+
+</main>
