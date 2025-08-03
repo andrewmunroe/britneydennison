@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
   src:
     local('Inter_18pt-Italic'),
@@ -38,4 +38,8 @@ body {
 
 header a {
   color: white;
+}
+
+.list-row::after {
+  display: none;
 }

@@ -11,43 +11,85 @@ import ProjectList from '../components/ProjectList.astro'
 import paris from '../assets/img/britney-lausanne2.jpg'
 import yellowknife from '../assets/img/britney-yellowknife.jpg'
 
-
 <main>
 
 <header class="bg-emerald-900 w-full md:flex items-stretch">
 
-<div class="prose p-8 mx-auto flex-1/2 flex flex-wrap">
-  <div>
-    <h1 class="text-4xl rounded leading-10 text-white mb-6">Britney Dennison is a multimedia journalist and journalism educator.</h1>
+  <div class="prose p-8 pl-12 pt-12 mx-auto flex-1/2">
+    <h1 class="text-3xl lg:text-4xl rounded text-white mb-6">Hello! I’m Britney Dennison, a Vancouver-based multimedia journalist and journalism educator.</h1>
     <div class="gap-2 flex flex-wrap">
-      <button class="btn btn-success min-w-[120px]">Journalism</button>
-      <button class="btn btn-success min-w-[120px]">Teaching</button>
-      <button class="btn btn-success min-w-[120px]">Contact</button>
+      <a class="btn text-white btn-dash btn-success min-w-[120px]" href="#journalism">Journalism</a>
+      <button class="btn text-white btn-dash btn-success min-w-[120px]">Teaching</button>
+      <button class="btn text-white btn-dash btn-success min-w-[120px]">Contact</button>
     </div>
   </div>
-  <p class="text-xs text-neutral-content self-end">Photo: Britney leading graduate students on a reporting trip to the International Olympic Committee headquarters in Lausanne in December, 2023. The result of that reporting was an Al Jazeera documentary on housing displacement and the Olympics, broadcast to millions.</p>
-</div>
 
-<figure class="flex flex-1/2">
-<Image src={paris} alt="A woman holding a camera on the streets of Paris in December." class="object-cover" />
-</figure>
+  <figure class="flex flex-1/2">
+  <Image src={paris} alt="A woman holding a camera on the streets of Paris in December." class="object-cover" />
+  </figure>
 
 </header>
 
-<article class="py-12 px-8 max-w-[80%]">
+<article class="px-6 border-emerald-900 border-l-32">
 
-<div class="md:flex gap-8 mb-12 text-sm">
+<div class="flex">
 
-<div class="flex-1/2"><p>Britney’s work has been published in outlets including The Toronto Star, The Tyee, PBS NewsHour, Mongabay, Mother Jones, NBC News, and Al Jazeera.</p><p class="mt-4">Her journalism and her work in journalism education has earned her a number of <a class="underline decoration-wavy font-bold" href="#">awards</a>, including a National Edward R. Murrow Award in the category of Diversity, Equity, and Inclusion.</p></div>
+<div class="mb-12 text-sm prose mt-6">
 
-<p class="flex-1/2">Britney is currently the Executive Editor at the Global Reporting Centre (GRC), based at the University of British Columbia’s School of Journalism, Writing, and Media. For the past ten years, she has been instrumental in shaping the GRC, a hub for journalism collaboration, education, and research, as well as teaching the Global Reporting Program, a year-long graduate-level course at UBC that sees students travel abroad to conduct a deep global investigation.</p>
+<p>My work has been published in partnership with <em>The Toronto Star</em>, The Tyee, PBS NewsHour, Mongabay, Mother Jones, NBC News, PRX, and Al Jazeera, among others.</p>
+
+<p>Throughout my career projects I’ve led and contributed to have been recognized with a number of <a href="#" class="link text-emerald-800 decoration-wavy">awards</a>, including a National Edward R. Murrow Award in the category of Diveristy, Equity, and Inclusion for a project I funded and led called <em>Turning Points</em>.</p>
+
+<p>I’m the current Executive Editor at the <a class="link text-emerald-800 decoration-wavy" href="https://globalreportingcentre.org">Global Reporting Centre</a> (GRC), a non-profit hub for global journalism collaboration, education, and research based at the University of British Columbia School of Journalism, Writing, and Media.</p>
+
+<p>For the past ten years, I’ve also been instrumental in shaping, administering, and teaching the <a class="link text-emerald-800 decoration-wavy" href="https://globalreportingprogram.org">Global Reporting Program</a>, a graduate-level and interdisciplinary course at UBC that brings students together to gain experience in the field reporting on a year-long, deep-dive global investigation, and publishing with a major media partner.</p>
+
+</div>
+
+<p class="text-xs text-emerald-800 text-right ml-48 mt-2">Photo: helping graduate students prepare for an interview with senior officials of the International Olympic Committee at their headquarters in Lausanne in December, 2023. The result of that work was a documentary coproduced and broadcast by Al Jazeera on housing displacement and the 2024 Olympics, which was viewed by millions.</p>
 
 </div>
 
 <figure>
 <Image src={yellowknife} alt="A woman holding a camera on the streets of Paris in December." class="rounded" />
-<figcaption class="text-xs opacity-50 max-w-prose rounded-lg">Britney leading graduate students in the field at the head office of the International Olympic Committee in Lausanne, Switzerland. With Britney as Executive Editor, the students produced a 20-minute documentary related to housing displacement and the Paris 2024 Summer Olympics that was published by Al Jazeera and broadcast to millions.</figcaption>
+<figcaption class="text-xs opacity-50 max-w-prose rounded-lg">In the field in Yellowknife, NWT.</figcaption>
 </figure>
+
+<div class="prose">
+
+<section class="mt-8">
+
+<h2 class="text-3xl border-t pt-6 mb-0" id="journalism">Journalism</h2>
+
+<ul class="list p-0 m-0">
+  
+  <li class="text-sm list-row px-0 py-4 b-0">A selection of my journalistic projects.</li>
+  
+  <li class="list-row p-0">
+    <a href="https://globalreportingcentre.org/state-of-play/" class="list-row p-4 border no-underline border-base-300 hover:border-solid hover:border-success hover:bg-base-100">
+    <div class="opacity-50 tabular-nums leading-snug text-xs mt-1 w-10">Aug<br />2024</div>
+    <div>
+      <div class="flex items-center gap-2 font-bold">State of Play: Summer Games<Icon name="lucide:arrow-right" slot="icon" /><span class="ml-auto font-normal badge badge-sm badge-outline badge-success">Podcast Series</span></div>
+      <div>Executive Editor | GRC/PRX</div>
+      <p class="list-col-wrap text-xs mb-0">The Olympics are meant to welcome the world, but who are they really for? In this six-part series, meet the people who are moved out, pushed out, and priced out in the name of sports.</p>
+    </div>
+    </a>
+  </li>
+  <li class="list-row p-0">
+    <a href="https://www.aljazeera.com/video/people-power/2024/7/15/france-olympic-gamble" class="list-row p-4 border no-underline border-base-300 hover:border-solid hover:border-info hover:bg-base-100">
+    <div class="opacity-50 leading-snug text-xs mt-1 w-10">July<br />2024</div>
+    <div>
+      <div class="flex items-center gap-2 font-bold">France’s Olympic Gamble<Icon name="lucide:arrow-right" slot="icon" /><span class="ml-auto badge font-normal badge-sm badge-outline badge-info">Documentary Film</span></div>
+      <div>Senior Producer/Instructor | Al Jazeera’s People and Power/GRP</div>
+      <p class="list-col-wrap text-xs mb-0">The Olympics are meant to welcome the world, but who are they really for? In this six-part series, meet the people who are moved out, pushed out, and priced out in the name of sports.</p>
+    </div>
+    </a>
+  </li>
+</ul>
+
+</section>
+
+</div>
 
 </article>
 
