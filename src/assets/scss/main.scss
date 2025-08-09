@@ -1,3 +1,5 @@
+@reference 'tailwindcss';
+
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -38,6 +40,10 @@ body {
 
 header a {
   color: white;
+}
+
+p a {
+  @apply text-emerald-800 decoration-wavy;
 }
 
 .list-row::after {

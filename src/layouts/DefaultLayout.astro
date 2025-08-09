@@ -2,17 +2,14 @@
 import '../styles/tailwind.css'
 import '../assets/scss/main.scss'
 import SiteMeta from '../components/SiteMeta.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
 import { ClientRouter } from 'astro:transitions'
 
 const {
-  title = 'Accessible Astro',
-  description = 'A starter project with accessibility features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.',
+  title = 'Portfolio',
+  description = 'Britney Dennison is an award-winning journalist and journalism educator. She’s the current Executive Editor at the Global Reporting Centre, based at the University of British Columbia’s School of Journalism, Writing, and Media.',
   url = Astro.site,
   image = 'social-preview-image.png',
   author = 'Britney Dennison',
-  projectId = 'default'
 } = Astro.props
 ---
 
@@ -30,36 +27,7 @@ const {
     <!-- Enable Astro View Transitions for all browsers -->
     <ClientRouter />
   </head>
-  <body>
-    <Header />
+  <body class="mx-auto max-w-[1600px]">
     <slot />
-    <Footer />
-    <style lang="scss" is:global>
-      // sticky footer on low content pages
-      html,
-      body {
-        height: auto;
-      }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        overflow-x: clip;
-
-        main {
-          flex: 1 0 auto;
-        }
-
-        footer {
-          flex-shrink: 0;
-        }
-      }
-
-      pre {
-        border: 2px solid var(--link-color);
-        border-radius: 0.35rem;
-        padding: 1rem;
-      }
-    </style>
   </body>
 </html>
