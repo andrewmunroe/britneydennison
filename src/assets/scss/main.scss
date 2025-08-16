@@ -46,6 +46,14 @@ p a {
   @apply text-emerald-800 decoration-wavy;
 }
 
+p + p {
+  margin-top: 1rem;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
 .list-row::after {
   display: none;
 }
@@ -59,9 +67,48 @@ li svg {
 }
 
 a.list-row {
-  @apply px-4 py-3 border no-underline;
+  @apply px-4 py-3 border no-underline block mb-3;
+  max-width: 620px;
 }
 
 .award {
   font-size: 0.7rem;
+  @apply leading-snug;
+}
+
+a.btn {
+  display: flex;
+}
+
+.accordion {
+  max-width: 620px;
+  .icon-plus {
+    @apply hidden;
+  }
+  h3 {
+    @apply text-sm! mb-0!;
+    font-weight: 700 !important;
+
+  }
+  li {
+    padding: 0;
+  }
+  .title {
+    padding: 0;
+  }
+  .content {
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.3rem;
+    border: 1px solid #dce2eb;
+    li {
+      margin-top: 1.5rem;
+      span {
+        @apply inline-block;
+      }
+    }
+  }
+}
+
+figure {
+  max-width: 620px;
 }
