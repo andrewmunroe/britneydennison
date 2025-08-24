@@ -5,10 +5,8 @@ import SiteMeta from '../components/SiteMeta.astro'
 import { ClientRouter } from 'astro:transitions'
 
 const {
-  title = 'Portfolio',
   description = 'Britney Dennison is an award-winning journalist and journalism educator. She’s the current Executive Editor at the Global Reporting Centre, based at the University of British Columbia’s School of Journalism, Writing, and Media.',
-  url = Astro.site,
-  image = 'social-preview-image.png',
+  url = 'https://britneydennison.com',
   author = 'Britney Dennison',
 } = Astro.props
 ---
@@ -22,7 +20,7 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
 
-    <SiteMeta title={title} description={description.substring(0, 100)} url={url} image={image} author={author} />
+    <SiteMeta description={description} url="https://britneydennison.com" author={author} />
 
     <!-- Enable Astro View Transitions for all browsers -->
     <ClientRouter />
